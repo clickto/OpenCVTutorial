@@ -1,0 +1,11 @@
+/.vs
+
+/Debug
+/Release
+/x64
+*.log
+*.tlog
+*.ilk
+*.pdb
+*.obj
+*.idb
