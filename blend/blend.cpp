@@ -20,11 +20,11 @@ int main(int argc, char ** argv)
 	//namedWindow("Image2");
 	//imshow("Image2", image2);
 	Mat roi;
-	//Ñ¡¶¨Image1 380£¬ 380 ×÷ÎªROIÇøÓò
-	roi = image1(Rect(380, 380, image2.cols, image2.rows));
-	//¶Ô ROI½øĞĞ»ìºÏ
+	//é€‰å®šImage1 380ï¼Œ 380 ä½œä¸ºROIåŒºåŸŸ
+    roi = image1(Rect(0, 0, image2.cols, image2.rows));
+	//å¯¹ ROIè¿›è¡Œæ··åˆ
 	addWeighted(roi, 0.0, image2, 1.0, 128, roi);
-	//ÏÔÊ¾
+	//æ˜¾ç¤º
 	namedWindow("Blend");
 	imshow("Blend", image1);
 	waitKey(0);
