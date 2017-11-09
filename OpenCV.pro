@@ -5,4 +5,5 @@ SUBDIRS += \
     HelloCV \
     ImageWatcher \
     SplitMerge \
-    TrackBar
+    TrackBar \
+    Filter

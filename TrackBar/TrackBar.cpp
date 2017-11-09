@@ -8,7 +8,8 @@ const string windowName = "Window";
 const string brightnessBarName = "brightnessBar";
 const string contrastBarName = "contrastBar";
 Mat image;
-void onChange(int value, void *data) {
+void onChange(int value, void *) {
+    (void)value;
 	Mat bw = gBrigheness < 128 ? (image < gBrigheness) : (image > gBrigheness);
 	vector<vector<Point>> contours;
 	vector<Vec4i> hierarchy;
